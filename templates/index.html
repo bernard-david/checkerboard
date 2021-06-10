@@ -8,16 +8,16 @@
     <title>Checkerboard</title>
 </head>
 <body>
-    <table>
-        <tbody>
-            {% for y in range(0, y): %}
-            <tr>
-                {% for x in range(0, x): %}
-                <td></td>
-                {% endfor %}
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+    {% for y in range(0, y): %}
+    <div class="row">
+        {% for x in range(0, x): %}
+            {% if (x + y) % 2 == 0 %}
+                <div class="box" style="background-color: {{color1}};"></div>
+            {% else %}
+                <div class="box" style="background-color: {{color2}};"></div>
+            {% endif %}
+        {% endfor %}
+    </div>
+    {% endfor %}
 </body>
 </html>

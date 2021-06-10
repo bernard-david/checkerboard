@@ -2,12 +2,12 @@
     margin: 0;
     padding: 0;
 }
-table {
-    width: 70%;
-    /* border-collapse: collapse; */
+.row {
+    display: flex;
+    justify-content: center;
 }
-tr {
-    background-color: red;
-    width: 60px;
-    height: 60px;
+
+.box {
+    width: 50px;
+    height: 50px;
 }
